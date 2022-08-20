@@ -206,9 +206,11 @@ end
 function M.is_valid_buf(buf)
   -- Skip special buffers
   local buftype = vim.api.nvim_buf_get_option(buf, "buftype")
-  if buftype ~= "" and buftype ~= "quickfix" then
+
+	if vim.fn.getcmdwintype() ~= "" then
     return false
   end
+
   local filetype = vim.api.nvim_buf_get_option(buf, "filetype")
   if vim.tbl_contains(Config.options.highlight.exclude, filetype) then
     return false
