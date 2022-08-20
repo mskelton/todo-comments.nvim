@@ -1,3 +1,22 @@
+
+# ⚠ This is a fork of the official [todo-comments repo](https://github.com/folke/todo-comments.nvim)
+
+I am not the original author,
+I am just sick of all the errors that pop up in almost all possible situations that are caused by the original plugin.
+
+
+People have submitted many issues and PRs, many of which address or fix certain issues, but the original author doesn't seem to maintain the plugin anymore.
+
+## Original contributions
+
+Here are the contributions that have been incomporated into this fork:
+
+**@robertgzr** and **@joshuarubin**: [Disable highlighting in 'nofile' buffers](https://github.com/folke/todo-comments.nvim/pull/104)  
+**@arpangreat**: [Adding The Test Feature](https://github.com/folke/todo-comments.nvim/pull/45)  
+**@LevitatingOrange**: [Allow specifying wide_fg](https://github.com/folke/todo-comments.nvim/pull/92)  
+**@edman**: [feat: accept argument to filter keywords](https://github.com/folke/todo-comments.nvim/pull/116)  
+**@riddlew**: [feat: add config option to set gui style](https://github.com/folke/todo-comments.nvim/pull/117)  
+
 # ✅ Todo Comments
 
 **todo-comments** is a lua plugin for Neovim 0.5 to highlight and search for todo comments like
