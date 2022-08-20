@@ -17,6 +17,8 @@ Here are the contributions that have been incomporated into this fork:
 [**@edman**](https://github.com/edman): [feat: accept argument to filter keywords](https://github.com/folke/todo-comments.nvim/pull/116)  
 [**@riddlew**](https://github.com/riddlew): [feat: add config option to set gui style](https://github.com/folke/todo-comments.nvim/pull/117)  
 
+Big thanks to [**@Hauleth**](https://github.com/hauleth/) for explaining how to use git patches to sanely merge PRs from the original repo.
+
 # ✅ Todo Comments
 
 **todo-comments** is a lua plugin for Neovim 0.5 to highlight and search for todo comments like
