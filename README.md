@@ -11,11 +11,11 @@ People have submitted many issues and PRs, many of which address or fix certain 
 
 Here are the contributions that have been incomporated into this fork:
 
-[**@robertgzr**](https://github.com/robertgzr) and [**@joshuarubin**](https://github.com/joshuarubin): [Disable highlighting in 'nofile' buffers](https://github.com/folke/todo-comments.nvim/pull/104)  
-[**@arpangreat**](https://github.com/arpangreat) [Adding The Test Feature](https://github.com/folke/todo-comments.nvim/pull/45)  
-[**@LevitatingOrange**](https://github.com/LevitatingOrange): [Allow specifying wide_fg](https://github.com/folke/todo-comments.nvim/pull/92)  
-[**@edman**](https://github.com/edman): [feat: accept argument to filter keywords](https://github.com/folke/todo-comments.nvim/pull/116)  
-[**@riddlew**](https://github.com/riddlew): [feat: add config option to set gui style](https://github.com/folke/todo-comments.nvim/pull/117)  
+[**@robertgzr**](https://github.com/robertgzr) and [**@joshuarubin**](https://github.com/joshuarubin): [Disable highlighting in 'nofile' buffers](https://github.com/folke/todo-comments.nvim/pull/104)
+[**@arpangreat**](https://github.com/arpangreat) [Adding The Test Feature](https://github.com/folke/todo-comments.nvim/pull/45)
+[**@LevitatingOrange**](https://github.com/LevitatingOrange): [Allow specifying wide_fg](https://github.com/folke/todo-comments.nvim/pull/92)
+[**@edman**](https://github.com/edman): [feat: accept argument to filter keywords](https://github.com/folke/todo-comments.nvim/pull/116)
+[**@riddlew**](https://github.com/riddlew): [feat: add config option to set gui style](https://github.com/folke/todo-comments.nvim/pull/117)
 
 Big thanks to [**@Hauleth**](https://github.com/hauleth/) for explaining how to use git patches to sanely merge PRs from the original repo.
 
@@ -53,7 +53,7 @@ Install the plugin with your preferred package manager:
 ```lua
 -- Lua
 use {
-  "folke/todo-comments.nvim",
+  "B4mbus/todo-comments.nvim",
   requires = "nvim-lua/plenary.nvim",
   config = function()
     require("todo-comments").setup {
@@ -70,7 +70,7 @@ use {
 ```vim
 " Vim Script
 Plug 'nvim-lua/plenary.nvim'
-Plug 'folke/todo-comments.nvim'
+Plug 'B4mbus/todo-comments.nvim'
 
 lua << EOF
   require("todo-comments").setup {
