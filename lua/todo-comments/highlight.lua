@@ -209,7 +209,7 @@ function M.is_valid_buf(buf)
   -- Skip special buffers
   local buftype = vim.api.nvim_buf_get_option(buf, "buftype")
 
-	if vim.fn.getcmdwintype() ~= "" then
+  if vim.fn.getcmdwintype() ~= "" then
     return false
   end
 
@@ -279,7 +279,9 @@ function M.stop()
   M.wins = {}
   vim.fn.sign_unplace("todo-signs")
   for buf, _ in pairs(M.bufs) do
-    vim.api.nvim_buf_clear_namespace(buf, Config.ns, 0, -1)
+    if vim.api.nvim_buf_is_loaded(buf) then
+      vim.api.nvim_buf_clear_namespace(buf, Config.ns, 0, -1)
+    end
   end
   M.bufs = {}
 end
